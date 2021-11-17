@@ -44,6 +44,11 @@ class LinearRegression {
       ) *
         2) /
       this.features.length;
+
+    // updating our values with m and b
+    // (slope * learning rate) and subtract b and m
+    this.m = this.m - mSlope * this.options.learningRate;
+    this.b = this.b - bSlope * this.options.learningRate;
   }
 
   train() {
