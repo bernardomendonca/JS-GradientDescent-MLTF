@@ -2,7 +2,7 @@ const tf = require("@tensorflow/tfjs");
 const _ = require("lodash");
 
 class LinearRegression {
-  constructor(feaures, labels, options) {
+  constructor(features, labels, options) {
     this.features = features;
     this.labels = labels;
 
